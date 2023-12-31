@@ -1,0 +1,254 @@
+
+
+html{
+    background: url(bgs/marauder.jpg) no-repeat center center fixed;
+    
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+  display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("bg-03.jpg");
+  }
+
+  #noButton {
+    margin-top: 20px;
+    transition: 0.5s;
+  }
+
+  #yesButton {
+    margin-top: 20px;
+  }
+
+ /* New Code */
+ 
+ .button {
+  color: white;
+  padding: 16px 32px;
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.button1 {
+  border-radius: 18px;
+  background-color: rgb(242, 226, 226, 0.9); 
+  color: black; 
+  font-weight:bolder;
+  border: 2px solid #222;
+  
+  
+}
+
+.button1:hover {
+  background-color: rgb(242, 226, 226, 0.6);
+  color: white;
+}
+/* */
+
+  .header_text {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+    font-weight: bold;
+
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #ffffff;
+  }
+
+  .text {
+    font-family: 'Playfair Display', serif;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 0px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* margin-top: 100px; */
+    margin-top: 10px;
+    /* margin-left: 50px; */
+  }
+  .btn {
+    background-color: #017cff;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px 2px 4px 2px;
+    cursor: pointer;
+    border: none;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 3px 3px black;
+  }
+
+  .btn:hover {
+    background-color: #ffffff;
+    color: #f4f5f7;
+  }
+
+.content {
+  max-width: 98.57rem;
+  margin: 2rem auto;
+  box-shadow: -1px 0px 6px 0px rgba(0,0,0,0.75);
+  min-height: 100%;
+} 
+p.small {
+  line-height: 0.7;
+}
+
+p.big {
+  line-height: 1.8;
+  font-size: 30px;
+  font-family:'Dancing Script', cursive;
+  font-weight: 900;
+}
+p.normal {
+  font-weight: normal;
+}
+
+p.thick {
+  font-weight: bold;
+}
+
+p.thicker {
+  font-weight: 900;
+}
+.right-container {
+  margin-top: 400px;
+  margin-bottom: 10px;
+  margin-right: 20%;
+  max-width: 100%;
+  background-color: rgb(242, 226, 226, 0.4);
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+  font-family:'Dancing Script', cursive;
+  font-size: medium;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+#container_yes{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  font-size: xx-large;
+  color: rgb(62, 34, 2);
+  width: 50vw;
+  height: 300pt;
+  filter: url(#threshold) blur(0.6px);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#container_fini {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-family: 'Playfair Display', serif;
+  width: 50vw;
+  height: 300pt;
+  filter: url(#threshold) blur(0.6px);
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Playfair Display', serif;
+  font-size: large;
+  color: rgb(62, 34, 2);
+}
+
+#text1,
+#text2 {
+    position: absolute;
+    width: 100%;
+    display: inline-block;
+    font-family: 'windlassregular';
+    font-size: 60pt;
+    overflow: hidden;
+    text-align: center;
+    color:  rgb(62, 34, 2);
+    font-weight: lighter;
+    user-select: none;
+}
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}
